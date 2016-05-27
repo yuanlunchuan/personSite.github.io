@@ -10,7 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// <script src="javascript/radialIndicator.js"></script>
+// <script src="javascript/unslider.min.js"></script>
+// <script type="text/javascript" src="javascript/wow.min.js"></script>
+// <script type="text/javascript" src="javascript/jquery.singlePageNav.min.js">
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
