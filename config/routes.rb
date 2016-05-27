@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/'           => redirect('/client/sites/1')
   namespace :client do
     resources :sites
   end
