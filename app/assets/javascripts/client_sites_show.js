@@ -102,6 +102,24 @@ var Obj = {
     $('.chickensalad .content').addClass('hidden');
   },
 
+  onSendMessageSuccess: function(event){
+    alert(event.message);
+  },
+
+  onSendMessageFaliure: function(event){
+    alert("save error, please try agian.");
+  },
+
+  onSendMessageButtonClicked: function(event){
+    var self = Obj;
+    $.post("/client/sites",{
+      name: $('#name').val(),
+      email: $('#email').val(),
+      phone: $('#phone').val(),
+      message: $('#message').val()
+    }, self.onSendMessageSuccess).error(self.onSendMessageFaliure);
+  },
+
   initialize: function(){
     var self = Obj;
 
@@ -113,6 +131,7 @@ var Obj = {
     $('.navbar-collapse a').on('click', self.onNavBarClicked);
     $('nav li').on('click', self.onNavItemClicked);
     $('.chickensalad').hover(self.onChickensaladHovered, self.onChickensaladNormaled);
+    $('#send-message').on("click", self.onSendMessageButtonClicked);
     $(window).on('scroll', self.onWindowScrolled);
     self.initIndicatorContainer();
   }
