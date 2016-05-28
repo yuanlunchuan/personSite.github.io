@@ -103,6 +103,10 @@ var Obj = {
   },
 
   onSendMessageSuccess: function(event){
+    $('#name').val("");
+    $('#email').val("");
+    $('#phone').val("");
+    $('#message').val("");
     alert(event.message);
   },
 
