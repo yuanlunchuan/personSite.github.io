@@ -71,18 +71,17 @@
       </div>
     </div>
 
-
     <div class="aboutme-img">
       <div class="left-content">
-        <img src="images/aboutme_l.png" class="img-responsive wow fadeInLeft" data-wow-duration="2s" data-wow-offset="10">
+        <%= image_tag 'client/sites/aboutme_l.png', class: 'img-responsive wow fadeInLeft', 'data-wow-duration': '2s', 'data-wow-offset': "10" %>
         <h3 class="wow fadeInLeft" data-wow-offset="10">Perfectionist</h3>
       </div>
       <div class="center-content">
-        <img src="images/aboutme.png" class="img-responsive wow fadeInUp" data-wow-offset="10">  
+        <%= image_tag 'client/sites/aboutme.png', class: 'img-responsive wow fadeInUp', 'data-wow-offset': "10" %>
         <h3 class="wow fadeInUp" data-wow-offset="10">Cheerful</h3>
       </div>
       <div class="right-content">
-        <img src="images/aboutme_r.png" class="img-responsive wow fadeInRight" data-wow-duration="2s" data-wow-offset="10">
+        <%= image_tag 'client/sites/aboutme_r.png', class: 'img-responsive wow fadeInRight', 'data-wow-duration': '2s', 'data-wow-offset': "10" %>
         <h3 class="wow fadeInRight" data-wow-offset="10">Reliable</h3>
       </div>
     </div>
@@ -137,7 +136,7 @@
         <li>
           <div class="row">
             <div class="col-md-6">
-              <img src="images/mypassi.jpg" alt="" class="img-responsive img-rounded">
+              <%= image_tag "client/sites/mypassi.jpg", class: "img-responsive img-rounded" %>
             </div>
             <div class="col-md-6">
               <h1>MyPassi</h1>
@@ -150,7 +149,7 @@
         <li>
           <div class="row">
             <div class="col-md-6">
-              <img src="images/paylobo.jpg" alt="" class="img-responsive img-rounded">
+              <%= image_tag "client/sites/paylobo.jpg", class: "img-responsive img-rounded" %>
             </div>
             <div class="col-md-6">
               <h1>Paylobo</h1>
@@ -163,7 +162,7 @@
         <li>
           <div class="row">
             <div class="col-md-6">
-              <img src="images/cloudsmsplus.jpg" alt="" class="img-responsive img-rounded">
+              <%= image_tag "client/sites/cloudsmsplus.jpg", class: "img-responsive img-rounded" %>
             </div>
             <div class="col-md-6">
               <h1>CloudSMS+</h1>
@@ -175,10 +174,10 @@
         </li>
       </ul>
       <a href="javascript:void(0);" class="unslider-arrow prev">
-        <img class="arrow" id="al" src="images/arrowl.png" alt="prev" width="20" height="35">
+        <%= image_tag "client/sites/arrowl.png", id: "al", class: "arrow", width: "20", height: "35" %>
       </a>
       <a href="javascript:void(0);" class="unslider-arrow next">
-        <img class="arrow" id="ar" src="images/arrowr.png" alt="next" width="20" height="37">
+        <%= image_tag "client/sites/arrowr.png", class: "arrow", id: "ar", width: '20', height: '37' %>
       </a>
     </div>
   </div>
@@ -186,28 +185,28 @@
     <div class="row">
       <div class="col-md-3 wow slideInUp" id="ability-code-box" data-wow-offset="10">
         <a href="">
-          <img src="images/code-default.png" class="img-responsive" id="code-image">
+          <%= image_tag "client/sites/code-default.png", class: 'img-responsive', id: 'code-image' %>
           <h3>WEB APPLICATIONS</h3>
         </a>
         <p>Starting with very simple web sites till complex internet presences.</p>
       </div>
       <div class="col-md-3 wow zoomIn" data-wow-offset="10">
         <a href="">
-          <img src="images/software-default.png" class="img-responsive">
+          <%= image_tag "client/sites/software-default.png", class: "img-responsive" %>
           <h3>SOFTWARE</h3>
         </a>
         <p>No matter whether Java Applications or Mobile Apps. </p>
       </div>
       <div class="col-md-3 wow flipInX" data-wow-offset="10">
         <a href="">
-          <img src="images/flag-default.png" class="img-responsive">
+          <%= image_tag "client/sites/flag-default.png", class: "img-responsive" %>
           <h3>GRAPHICS & DESIGN</h3>
         </a>
         <p>Such as creating unique logos, catchy folders or just clear handouts. </p>
       </div>
       <div class="col-md-3 wow bounceInRight">
         <a href="">
-          <img src="images/flag-default.png" class="img-responsive">
+          <%= image_tag "client/sites/flag-default.png", class: "img-responsive" %>
           <h3>VIDEO PRODUCTION</h3>
         </a>
         <p>Unfortunately, not much knowledge for professional outcomes.</p>
@@ -224,28 +223,28 @@
       <div class="row">
         <div class="col-md-3 wow fadeInUp" data-wow-offset="10">
           <div class="social-box">
-            <img src="images/facebook-icon.png" class="img-responsive">
+            <%= image_tag "client/sites/facebook-icon.png", class: "img-responsive" %>
           </div>
           <h5>Facebook</h5>
           <h3>Let's be friends</h3>
         </div>
         <div class="col-md-3 wow bounceInDown" data-wow-offset="10">
           <div class="social-box">
-            <img src="images/twter-icon.png" class="img-responsive">
+            <%= image_tag "client/sites/twter-icon.png", class: "img-responsive" %>
           </div>
           <h5>Twitter</h5>
           <h3>Follow my news</h3>
         </div>
         <div class="col-md-3 wow bounce" data-wow-offset="10">
           <div class="social-box">
-            <img src="images/google-icon.png" class="img-responsive">
+            <%= image_tag "client/sites/google-icon", class: "img-responsive" %>
           </div>
           <h5>Google Plus</h5>
           <h3>Add to your circles</h3>
         </div>
         <div class="col-md-3 wow rotateIn" data-wow-offset="10">
           <div class="social-box">
-            <img src="images/youtube-icon.png" class="img-responsive">
+            <%= image_tag "client/sites/youtube-icon", class: "img-responsive" %>
           </div>
           <h5>You Tube</h5>
           <h3>Discover my Channel</h3>
@@ -288,7 +287,7 @@
     <div class="row">
       <div class="col-md-3 chickensalad">
         <div class="content text-center hidden">
-          <img src="images/gift.png" class="img-responsive">
+          <%= image_tag "client/sites/gift", class: "img-responsive" %>
           <h3>Chicken Salad with Potatoes</h3>
         </div>
       </div>
@@ -316,22 +315,22 @@
       <h2>Well, as you can see here are some interesting facts about myself.</h2>
       <div class="row">
         <div class="col-md-3">
-          <img src="images/years.png" class="img-responsive">
+          <%= image_tag "client/sites/years.png", class: "img-responsive" %>
           <h1><strong>23</strong></h1>
           <p class="muted">years old</p>
         </div>
         <div class="col-md-3">
-          <img src="images/youtube.png" class="img-responsive">
+          <%= image_tag "client/sites/youtube.png", class: "img-responsive" %>
           <h1><strong>10495</strong></h1>
           <p>views on my video</p>
         </div>
         <div class="col-md-3">
-          <img src="images/praise.png" class="img-responsive">
+          <%= image_tag "client/sites/praise.png", class: "img-responsive" %>
           <h1><strong>148</strong></h1>
           <p>seconds to solve a Rubik's Cube</p>
         </div>
         <div class="col-md-3">
-          <img src="images/data-flag.png" class="img-responsive">
+          <%= image_tag "client/sites/data-flag.png", class: "img-responsive" %>
           <h1><strong>2</strong></h1>
           <p>languages</p>
         </div>
@@ -361,7 +360,7 @@
     <h3>Here you can find all major events which influenced my life and have made me the person I am today. </h3>
     <div class="born text-center">
       <h1>Born</h1>
-      <img src="images/born.png" class="img-responsive" />
+      <%= image_tag "client/sites/born.png", class: "img-responsive" %>
       <p>6 December 1992</p>
       <div class="primary-school">
         <div class="panel panel-default">
@@ -369,7 +368,7 @@
             <a href="">Elementary School Groß-Enzersdorf</a>
           </div>
           <div class="panel-body">
-            <img src="images/elementaryschool.jpg" width="400px;">
+            <%= image_tag "client/sites/elementaryschool.jpg", width: "400px" %>
           </div>
           <div class="panel-footer">
             <span>From September 1999 till June 2003 I attended<br/> school for the first time and got a lot of new friends.</span>
@@ -380,7 +379,7 @@
 
       <div class="primary-school-icon">
         <p>Sept. 1999</p>
-        <img src="images/primary-school.png" class="img-responsive">
+        <%= image_tag "client/sites/primary-school.png", class: "img-responsive" %>
         <p>Elementary School</p>
       </div>
       <div class="vertical-line"></div>
@@ -390,7 +389,7 @@
             <a href="">Comprehensive School Groß-Enzersdorf</a>
           </div>
           <div class="panel-body">
-            <img src="images/comprehensiveschool.jpg" width="400px">
+            <%= image_tag "client/sites/comprehensiveschool.jpg", width: "400px"%>
           </div>
           <div class="panel-footer">
             <span>One of the most influential time was at this<br /> school because of my friends and the fact that<br /> I grew older. </span>
@@ -400,7 +399,7 @@
 
       <div class="primary-school-icon">
         <p>Sept. 2003</p>
-        <img src="images/comprehensive.png" class="img-responsive">
+        <%= image_tag "client/sites/comprehensive.png", class: "img-responsive" %>
         <p>Comprehensive School</p>
       </div>
       <div class="vertical-line"></div>
@@ -411,7 +410,7 @@
             <a href="">HTL Rennweg - Internet & Media Engineering</a>
           </div>
           <div class="panel-body">
-            <img src="images/firmenmesse.jpg" width="400px">
+            <%= image_tag "client/sites/firmenmesse.jpg", width: "400px" %>
           </div>
           <div class="panel-footer">
             <span>As part of the Project Award we also organized<br /> a business fair where companies were able to<br /> promote their products. </span>
@@ -421,7 +420,7 @@
 
       <div class="primary-school-icon">
         <p>Sept. 2007</p>
-        <img src="images/high-school.png" class="img-responsive">
+        <%= image_tag "client/sites/high-school.png", class: "img-responsive" %>
         <p>Technical High School</p>
       </div>
       <div class="vertical-line"></div>
@@ -444,7 +443,7 @@
 <section id="phone-number">
   <div class="shadow">
     <div class="container-fluid text-center">
-      <img src="images/phone.png">
+      <%= image_tag "client/sites/phone.png" %>
       <h1 class="animated slideInLeft"><span class="phone">+86 13551031965</span></h1>
       <p>If you want to call me please contact me via the following form in advance. </p>
     </div>
