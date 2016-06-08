@@ -89,7 +89,6 @@ var Obj = {
     self.activeNavItemById('interests');
     self.activeNavItemById('personal');
     self.activeNavItemById('contact');
-    
   },
 
   onChickensaladHovered: function(event){
@@ -100,6 +99,14 @@ var Obj = {
   onChickensaladNormaled: function(event){
     var self = Obj;
     $('.chickensalad .content').addClass('hidden');
+  },
+
+  onSnowboadHovered: function(){
+    $('.snowboard .content').removeClass('hidden');
+  },
+
+  onSnowboadNormal: function(){
+    $('.snowboard .content').addClass('hidden');
   },
 
   onSendMessageSuccess: function(event){
@@ -135,6 +142,7 @@ var Obj = {
     $('.navbar-collapse a').on('click', self.onNavBarClicked);
     $('nav li').on('click', self.onNavItemClicked);
     $('.chickensalad').hover(self.onChickensaladHovered, self.onChickensaladNormaled);
+    $('.snowboard').hover(self.onSnowboadHovered, self.onSnowboadNormal);
     $('#send-message').on("click", self.onSendMessageButtonClicked);
     $(window).on('scroll', self.onWindowScrolled);
     self.initIndicatorContainer();
